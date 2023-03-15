@@ -9,3 +9,14 @@ C:\Users\pruizabe\source\repos\kCalControl\kCalControl\obj\Debug\kCalControl.csp
 C:\Users\pruizabe\source\repos\kCalControl\kCalControl\obj\Debug\kCalControl.csproj.CoreCompileInputs.cache
 C:\Users\pruizabe\source\repos\kCalControl\kCalControl\obj\Debug\kCalControl.exe
 C:\Users\pruizabe\source\repos\kCalControl\kCalControl\obj\Debug\kCalControl.pdb
+C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.csproj.AssemblyReference.cache
+C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.csproj.SuggestedBindingRedirects.cache
+C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.Form1.resources
+C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.Properties.Resources.resources
+C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.csproj.GenerateResource.cache
+C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.csproj.CoreCompileInputs.cache
+C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.exe
+C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.pdb
+C:\Users\pruizabe\source\repos\kCalControl\bin\Debug\kCalControl.exe.config
+C:\Users\pruizabe\source\repos\kCalControl\bin\Debug\kCalControl.exe
+C:\Users\pruizabe\source\repos\kCalControl\bin\Debug\kCalControl.pdb

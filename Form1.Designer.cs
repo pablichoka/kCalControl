@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,15 +48,22 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Location = new System.Drawing.Point(33, 280);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 23);
+            this.button1.Size = new System.Drawing.Size(97, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "Calcular MB";
             this.button1.UseVisualStyleBackColor = true;
@@ -87,9 +95,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(33, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 17);
+            this.label3.Size = new System.Drawing.Size(137, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Introduzca su altura (cm):";
+            this.label3.Text = "Introduzca su altura:";
             // 
             // label4
             // 
@@ -97,9 +105,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.Location = new System.Drawing.Point(33, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 17);
+            this.label4.Size = new System.Drawing.Size(132, 17);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Introduzca su peso (kg):";
+            this.label4.Text = "Introduzca su peso:";
             // 
             // label5
             // 
@@ -133,9 +141,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(68, 0);
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton2.Location = new System.Drawing.Point(75, -2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(51, 17);
+            this.radioButton2.Size = new System.Drawing.Size(61, 21);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Mujer";
@@ -144,9 +153,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(0, 0);
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton1.Location = new System.Drawing.Point(0, -2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(62, 17);
+            this.radioButton1.Size = new System.Drawing.Size(76, 21);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Hombre";
@@ -158,6 +168,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(119, 20);
             this.textBox1.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.textBox1, "Indica tu edad en años");
             // 
             // textBox2
             // 
@@ -165,6 +176,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(119, 20);
             this.textBox2.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.textBox2, "Indica tu altura en cm");
             // 
             // textBox3
             // 
@@ -172,6 +184,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(119, 20);
             this.textBox3.TabIndex = 10;
+            this.toolTip1.SetToolTip(this.textBox3, "Indica tu peso en Kg (hasta dos decimales)");
             // 
             // comboBox1
             // 
@@ -189,6 +202,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(40, 21);
             this.comboBox1.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.comboBox1, "Se asume 1 hora de actividad por día");
             // 
             // label7
             // 
@@ -234,26 +248,87 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(776, 83);
+            this.panel2.Controls.Add(this.radioButton5);
+            this.panel2.Controls.Add(this.radioButton4);
+            this.panel2.Controls.Add(this.radioButton3);
+            this.panel2.Location = new System.Drawing.Point(494, 83);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 137);
+            this.panel2.Size = new System.Drawing.Size(138, 137);
             this.panel2.TabIndex = 16;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton5.Location = new System.Drawing.Point(3, 90);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(81, 21);
+            this.radioButton5.TabIndex = 2;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Volumen";
+            this.toolTip1.SetToolTip(this.radioButton5, "Se busca superar el número kcal calculado, a fin de ganar peso");
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_Checked);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton4.Location = new System.Drawing.Point(3, 50);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(118, 21);
+            this.radioButton4.TabIndex = 1;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Mantenimiento";
+            this.toolTip1.SetToolTip(this.radioButton4, "Se busca ajustarse al número de kCal calculado");
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_Checked);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton3.Location = new System.Drawing.Point(3, 10);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(88, 21);
+            this.radioButton3.TabIndex = 0;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Definición";
+            this.toolTip1.SetToolTip(this.radioButton3, "Se reduce la ingesta de kCal");
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_Checked);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(772, 33);
+            this.label10.Location = new System.Drawing.Point(490, 33);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 20);
+            this.label10.Size = new System.Drawing.Size(287, 20);
             this.label10.TabIndex = 17;
-            this.label10.Text = "label10";
+            this.label10.Text = "Seleccione el tipo de alimentación:";
+            this.toolTip1.SetToolTip(this.label10, "Según el tipo de alimentación que elija, se ajustarán las kCal \r\nque deben ser co" +
+        "nsumidas para cumplir el objetivo");
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button2.Location = new System.Drawing.Point(494, 280);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 30);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Generar menú";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 579);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(836, 579);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label9);
@@ -272,10 +347,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.HelpButton = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,6 +382,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -20,12 +20,16 @@ namespace kCalControl
             InitializeComponent();
         }
 
+        Double kcalFinal;
+        Double kcalMB;
+        Double exerCoef;
+        Double protPercentage;
+        Double carbsPercentage;
+        Double fatsPercentage;
+        Boolean check;
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Double kcalFinal;
-            Double kcalMB;
-            Double exerCoef;
-
             switch (comboBox1.SelectedIndex)
             {
                 case 0:
@@ -73,10 +77,12 @@ namespace kCalControl
                     }
                     label9.Text = Math.Round(kcalFinal, 2, MidpointRounding.ToEven).ToString() + " kCal";
                     label8.Show();
+                    check = true;
                 }
                 catch
                 {
                     MessageBox.Show("Debes rellenar toda la información.", "Información incompleta.", MessageBoxButtons.OK);
+                    check = false;
                 }
             }
             else if (radioButton2.Checked)
@@ -95,15 +101,18 @@ namespace kCalControl
                     }
                     label9.Text = Math.Round(kcalFinal, 2, MidpointRounding.ToEven).ToString() + " kCal";
                     label8.Show();
+                    check = true;
                 }
                 catch
                 {
                     MessageBox.Show("Debes rellenar toda la información.", "Información incompleta.", MessageBoxButtons.OK);
+                    check = false;
                 }
             }
             else if (!radioButton1.Checked && !radioButton2.Checked)
             {
                 MessageBox.Show("Debes rellenar toda la información.", "Información incompleta.", MessageBoxButtons.OK);
+                check = false;
             }
         }
 
@@ -120,8 +129,40 @@ namespace kCalControl
                 label5.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0, 0);
                 label7.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0, 0);
                 comboBox1.Enabled = true;
+            }        
+        }
+        //revisar estos valores y ajustarlos
+        private void radioButton3_Checked(object sender, EventArgs e)
+        {
+            protPercentage = 0.30;
+            carbsPercentage = 0.50;
+            fatsPercentage = 0.20;
+        }
+
+        private void radioButton4_Checked(object sender, EventArgs e)
+        {
+            protPercentage = 0.30;
+            carbsPercentage = 0.50;
+            fatsPercentage = 0.20;
+        }
+
+        private void radioButton5_Checked(object sender, EventArgs e)
+        {
+            protPercentage = 0.30;
+            carbsPercentage = 0.50;
+            fatsPercentage = 0.20;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (check != true)
+            {
+                MessageBox.Show("Se debe realizar el cálculo de las kCal necesarias.", "Objetivo desconocido", MessageBoxButtons.OK);
             }
-                
+            else
+            {
+
+            }
         }
     }
 }
