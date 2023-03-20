@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.SqlClient;
+using MySqlConnector;
 
 namespace kCalControl
 {
@@ -27,6 +29,7 @@ namespace kCalControl
         Double carbsPercentage;
         Double fatsPercentage;
         Boolean check;
+        Boolean check1 = false;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -137,6 +140,7 @@ namespace kCalControl
             protPercentage = 0.30;
             carbsPercentage = 0.50;
             fatsPercentage = 0.20;
+            check1 = true;
         }
 
         private void radioButton4_Checked(object sender, EventArgs e)
@@ -144,6 +148,7 @@ namespace kCalControl
             protPercentage = 0.30;
             carbsPercentage = 0.50;
             fatsPercentage = 0.20;
+            check1 = true; 
         }
 
         private void radioButton5_Checked(object sender, EventArgs e)
@@ -151,18 +156,40 @@ namespace kCalControl
             protPercentage = 0.30;
             carbsPercentage = 0.50;
             fatsPercentage = 0.20;
+            check1 = true;  
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (check != true)
+            if (check != true | check1 != true)
             {
                 MessageBox.Show("Se debe realizar el cálculo de las kCal necesarias.", "Objetivo desconocido", MessageBoxButtons.OK);
             }
             else
             {
-
+                try
+                {
+                    dbConnection();
+                    MessageBox.Show("Conexion exitosa", "Éxito", MessageBoxButtons.OK);
+                }
+                catch
+                {
+                    MessageBox.Show("Conexion erronea", "Error", MessageBoxButtons.OK);
+                }
             }
         }
+
+        private void dbConnection()
+        {
+            var builder = new MySqlConnectionStringBuilder
+            {
+                Server = "kcalcontrol-db.database.windows.net",
+                Database = "kcalcontrol-db",
+                UserID = "pablichoka@kcalcontrol-db.database.windows.net",
+                Password = "elMantekas.-.98",
+                SslMode = MySqlSslMode.Required,
+            };
+        }
+
     }
 }

@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "mssql1": {
-      "restored": true,
-      "restoreTime": "2023-03-16T11:57:18.693642Z"
+      "restored": false,
+      "restoreTime": "2023-03-18T19:56:03.0020024Z"
     },
     "secrets1": {
       "restored": true,
@@ -12,6 +12,16 @@
   "parameters": {
     "mssql1.subscriptionId": {
       "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "f06d0e99-375f-4ecd-bb85-f3b163012947"
+    },
+    "mssql1.resourceGroupLocation": {
+      "Name": "mssql1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "westeurope"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
       "Type": "subscription",
       "Value": "f06d0e99-375f-4ecd-bb85-f3b163012947"
     },

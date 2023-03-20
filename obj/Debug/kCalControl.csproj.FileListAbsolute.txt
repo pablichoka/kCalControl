@@ -20,3 +20,38 @@ C:\Users\pruizabe\source\repos\kCalControl\obj\Debug\kCalControl.pdb
 C:\Users\pruizabe\source\repos\kCalControl\bin\Debug\kCalControl.exe.config
 C:\Users\pruizabe\source\repos\kCalControl\bin\Debug\kCalControl.exe
 C:\Users\pruizabe\source\repos\kCalControl\bin\Debug\kCalControl.pdb
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\kCalControl.exe.config
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\kCalControl.exe
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\kCalControl.pdb
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\EntityFramework.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\EntityFramework.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.csproj.AssemblyReference.cache
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.Form1.resources
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.Properties.Resources.resources
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.csproj.GenerateResource.cache
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.csproj.CoreCompileInputs.cache
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.csproj.CopyComplete
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.exe
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.pdb
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\MySqlConnector.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Buffers.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Memory.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\MySqlConnector.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Buffers.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Memory.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.exe.config
