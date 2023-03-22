@@ -1,0 +1,52 @@
+UPDATE BREAKFAST
+SET 
+    /*ingr1_carbs = ROUND(f.carbs_total,2),
+    ingr1_prot = ROUND(f.prot_total, 2),
+    ingr1_fats = ROUND(f.fats_total, 2),
+    ingr1_typSize = f.typSize,
+    ingr1_kCalTotal = f.kCalTotal,
+    ingr2_carbs = ROUND(f.carbs_total,2),
+    ingr2_prot = ROUND(f.prot_total, 2),
+    ingr2_fats = ROUND(f.fats_total, 2),
+    ingr2_typSize = f.typSize,
+    ingr2_kCalTotal = f.kCalTotal,*/
+    ingr3_carbs = ROUND(f.carbs_total,2),
+    ingr3_prot = ROUND(f.prot_total, 2),
+    ingr3_fats = ROUND(f.fats_total, 2),
+    ingr3_typSize = f.typSize,
+    ingr3_kCalTotal = f.kCalTotal/*,
+    ingr4_carbs = ROUND(f.carbs_total,2),
+    ingr4_prot = ROUND(f.prot_total, 2),
+    ingr4_fats = ROUND(f.fats_total, 2),
+    ingr4_typSize = f.typSize,
+    ingr4_kCalTotal = f.kCalTotal,
+    ingr5_carbs = ROUND(f.carbs_total,2),
+    ingr5_prot = ROUND(f.prot_total, 2),
+    ingr5_fats = ROUND(f.fats_total, 2),
+    ingr5_typSize = f.typSize,
+    ingr5_kCalTotal = f.kCalTotal,
+    ingr6_carbs = ROUND(f.carbs_total,2),
+    ingr6_prot = ROUND(f.prot_total, 2),
+    ingr6_fats = ROUND(f.fats_total, 2),
+    ingr6_typSize = f.typSize,
+    ingr6_kCalTotal = f.kCalTotal,
+    ingr7_carbs = ROUND(f.carbs_total,2),
+    ingr7_prot = ROUND(f.prot_total, 2),
+    ingr7_fats = ROUND(f.fats_total, 2),
+    ingr7_typSize = f.typSize,
+    ingr7_kCalTotal = f.kCalTotal,
+    ingr8_carbs = ROUND(f.carbs_total,2),
+    ingr8_prot = ROUND(f.prot_total, 2),
+    ingr8_fats = ROUND(f.fats_total, 2),
+    ingr8_typSize = f.typSize,
+    ingr8_kCalTotal = f.kCalTotal,
+    ingr9_carbs = ROUND(f.carbs_total,2),
+    ingr9_prot = ROUND(f.prot_total, 2),
+    ingr9_fats = ROUND(f.fats_total, 2),
+    ingr9_typSize = f.typSize,
+    ingr9_kCalTotal = f.kCalTotal*/
+FROM 
+    BREAKFAST b
+    JOIN food f ON b.ingr3_name = f.name
+WHERE 
+    b.name LIKE 'Tostada%' AND f.name LIKE 'Atun%';

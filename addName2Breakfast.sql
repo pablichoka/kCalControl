@@ -1,0 +1,2 @@
+INSERT INTO BREAKFAST (name, ingr1_name, ingr2_name, ingr3_name/*, ingr4_name, ingr5_name, ingr6_name, ingr7_name, ingr8_name, ingr9_name*/)
+VALUES ('Tostada tomate atun', 'Pan blanco (tostada)', 'Tomate', 'Atun (escabeche)')

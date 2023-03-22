@@ -55,3 +55,27 @@ C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Numerics.V
 C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Pablo Ruiz Abellan\source\repos\kCalControl\obj\Debug\kCalControl.exe.config
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\EntityFramework.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\MySqlConnector.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Buffers.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Memory.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\EntityFramework.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\MySqlConnector.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Buffers.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Memory.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\pruizabe\source\repos\kcalControl\obj\Debug\kCalControl.exe.config
+C:\Users\pruizabe\source\repos\kcalControl\obj\Debug\kCalControl.csproj.CopyComplete

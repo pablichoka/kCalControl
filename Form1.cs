@@ -12,6 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
 using MySqlConnector;
+using System.Runtime.Remoting.Messaging;
 
 namespace kCalControl
 {
@@ -30,6 +31,11 @@ namespace kCalControl
         Double fatsPercentage;
         Boolean check;
         Boolean check1 = false;
+        int id;
+        string Name;
+        Double prot_total;
+        Double carbs_total;
+        Double fats_total;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -170,25 +176,58 @@ namespace kCalControl
                 try
                 {
                     dbConnection();
+                    label11.Text = id + Name + prot_total + carbs_total + fats_total;
                     MessageBox.Show("Conexion exitosa", "Éxito", MessageBoxButtons.OK);
                 }
-                catch
+                catch(Exception ex)
                 {
                     MessageBox.Show("Conexion erronea", "Error", MessageBoxButtons.OK);
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
                 }
             }
         }
 
         private void dbConnection()
         {
-            var builder = new MySqlConnectionStringBuilder
+            //var builder = new MySqlConnectionStringBuilder
+            //{
+            //    Server = "kcalcontrol-db.database.windows.net",
+            //    Database = "kcalcontrol-db",
+            //    UserID = "pablichoka@kcalcontrol-db.database.windows.net",
+            //    Password = "elMantekas.-.98",
+            //    SslMode = MySqlSslMode.Required,
+            //};
+
+            string connectionString = "Data Source=kalcontrol-db.database.windows.net;Initial Catalog=kcalcontrol-db;User ID=pablichoka;Password=elMantekas.-.98;Connect Timeout=30;Encrypt=True";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                Server = "kcalcontrol-db.database.windows.net",
-                Database = "kcalcontrol-db",
-                UserID = "pablichoka@kcalcontrol-db.database.windows.net",
-                Password = "elMantekas.-.98",
-                SslMode = MySqlSslMode.Required,
-            };
+                connection.Open();
+
+                // Crear una consulta SQL para seleccionar todos los datos de la tabla Customers
+                string sql = "SELECT * FROM food WHERE name = 'Patatinas'";
+
+                // Crear un SqlCommand con la consulta y la conexión
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    // Ejecutar la consulta y obtener los resultados en un objeto SqlDataReader
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        // Recorrer los registros en el resultado
+                        while (reader.Read())
+                        {
+                            // Obtener los valores de las columnas por su nombre o índice
+                            id = reader.GetInt32(0);
+                            Name = reader.GetString(1);
+                            prot_total = reader.GetDouble(3);
+                            carbs_total = reader.GetDouble(6);
+                            fats_total = reader.GetDouble(9);
+                        }
+                        reader.Close();
+                    }
+                }
+            }
+        
         }
 
     }
