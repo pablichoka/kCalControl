@@ -1,6 +1,6 @@
 UPDATE BREAKFAST
 SET 
-    /*ingr1_carbs = ROUND(f.carbs_total,2),
+    /*ingr1_carbs = ROUND(f.carbs_total, 2),
     ingr1_prot = ROUND(f.prot_total, 2),
     ingr1_fats = ROUND(f.fats_total, 2),
     ingr1_typSize = f.typSize,

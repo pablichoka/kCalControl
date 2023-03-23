@@ -79,3 +79,4 @@ C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Runtime.CompilerServ
 C:\Users\pruizabe\source\repos\kcalControl\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\pruizabe\source\repos\kcalControl\obj\Debug\kCalControl.exe.config
 C:\Users\pruizabe\source\repos\kcalControl\obj\Debug\kCalControl.csproj.CopyComplete
+C:\Users\pruizabe\source\repos\kcalControl\obj\Debug\kCalControl.Form2.resources

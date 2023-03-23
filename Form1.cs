@@ -23,6 +23,8 @@ namespace kCalControl
             InitializeComponent();
         }
 
+        String userSQL;
+        String passSQL;
         Double kcalFinal;
         Double kcalMB;
         Double exerCoef;
@@ -32,10 +34,12 @@ namespace kCalControl
         Boolean check;
         Boolean check1 = false;
         int id;
-        string Name;
+        String Name;
         Double prot_total;
         Double carbs_total;
         Double fats_total;
+        SqlConnection connection;
+        string connectionString;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -127,7 +131,7 @@ namespace kCalControl
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked)
+            if (checkBox1.Checked)
             {
                 label5.ForeColor = System.Drawing.Color.FromArgb(100, 119, 119, 119);
                 label7.ForeColor = System.Drawing.Color.FromArgb(100, 119, 119, 119);
@@ -138,7 +142,7 @@ namespace kCalControl
                 label5.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0, 0);
                 label7.ForeColor = System.Drawing.Color.FromArgb(255, 0, 0, 0);
                 comboBox1.Enabled = true;
-            }        
+            }
         }
         //revisar estos valores y ajustarlos
         private void radioButton3_Checked(object sender, EventArgs e)
@@ -154,7 +158,7 @@ namespace kCalControl
             protPercentage = 0.30;
             carbsPercentage = 0.50;
             fatsPercentage = 0.20;
-            check1 = true; 
+            check1 = true;
         }
 
         private void radioButton5_Checked(object sender, EventArgs e)
@@ -162,7 +166,7 @@ namespace kCalControl
             protPercentage = 0.30;
             carbsPercentage = 0.50;
             fatsPercentage = 0.20;
-            check1 = true;  
+            check1 = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -176,34 +180,31 @@ namespace kCalControl
                 try
                 {
                     dbConnection();
+                    getBreakfast();
                     label11.Text = id + Name + prot_total + carbs_total + fats_total;
                     MessageBox.Show("Conexion exitosa", "Éxito", MessageBoxButtons.OK);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Conexion erronea", "Error", MessageBoxButtons.OK);
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                    MessageBox.Show("Conexion erronea\n" + ex.Message, "Error", MessageBoxButtons.OK);
                 }
             }
         }
 
-        private void dbConnection()
+        public void dbConnection()
         {
-            //var builder = new MySqlConnectionStringBuilder
-            //{
-            //    Server = "kcalcontrol-db.database.windows.net",
-            //    Database = "kcalcontrol-db",
-            //    UserID = "pablichoka@kcalcontrol-db.database.windows.net",
-            //    Password = "elMantekas.-.98",
-            //    SslMode = MySqlSslMode.Required,
-            //};
+            Form2 sqlCon = new Form2();
+            sqlCon.ShowDialog();
+            userSQL = sqlCon.textBox1.Text;
+            passSQL = sqlCon.textBox2.Text;
+            connectionString = "Data Source=kalcontrol-db.database.windows.net;Initial Catalog=kcalcontrol-db;User ID=" + userSQL +";Password=" + passSQL + ";Connect Timeout=10;Encrypt=True";  
+        }
 
-            string connectionString = "Data Source=kalcontrol-db.database.windows.net;Initial Catalog=kcalcontrol-db;User ID=pablichoka;Password=elMantekas.-.98;Connect Timeout=30;Encrypt=True";
+        private void getBreakfast() {
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-
                 // Crear una consulta SQL para seleccionar todos los datos de la tabla Customers
                 string sql = "SELECT * FROM food WHERE name = 'Patatinas'";
 
@@ -227,7 +228,6 @@ namespace kCalControl
                     }
                 }
             }
-        
         }
 
     }

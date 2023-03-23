@@ -67,6 +67,7 @@
             this.button1.Size = new System.Drawing.Size(97, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "Calcular MB";
+            this.toolTip1.SetToolTip(this.button1, "Calcula tu metabolismo basal teniendo\r\nen cuenta los dias de actividad física.");
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -89,6 +90,7 @@
             this.label2.Size = new System.Drawing.Size(133, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Introduzca su edad:";
+            this.toolTip1.SetToolTip(this.label2, "Indica tu edad en años");
             // 
             // label3
             // 
@@ -99,6 +101,7 @@
             this.label3.Size = new System.Drawing.Size(137, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Introduzca su altura:";
+            this.toolTip1.SetToolTip(this.label3, "Indica tu altura en cm");
             // 
             // label4
             // 
@@ -109,6 +112,7 @@
             this.label4.Size = new System.Drawing.Size(132, 17);
             this.label4.TabIndex = 4;
             this.label4.Text = "Introduzca su peso:";
+            this.toolTip1.SetToolTip(this.label4, "Indica tu peso en Kg (hasta dos decimales)");
             // 
             // label5
             // 
@@ -119,6 +123,7 @@
             this.label5.Size = new System.Drawing.Size(246, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "Introduzca su nivel de actividad física:";
+            this.toolTip1.SetToolTip(this.label5, "Se asume 1 hora de actividad por día");
             // 
             // label6
             // 
@@ -224,6 +229,7 @@
             this.checkBox1.Size = new System.Drawing.Size(166, 21);
             this.checkBox1.TabIndex = 13;
             this.checkBox1.Text = "Deportista profesional";
+            this.toolTip1.SetToolTip(this.checkBox1, "Marque esto en caso de que realice\r\nuna actividad fisica elevada y abundante.");
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -256,6 +262,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(138, 137);
             this.panel2.TabIndex = 16;
+            this.toolTip1.SetToolTip(this.panel2, "Selecione el tipo de \r\ndieta que desea seguir.");
             // 
             // radioButton5
             // 
@@ -319,6 +326,7 @@
             this.button2.Size = new System.Drawing.Size(121, 30);
             this.button2.TabIndex = 18;
             this.button2.Text = "Generar menú";
+            this.toolTip1.SetToolTip(this.button2, "Genera un menú aleatorio cumpliendo\r\ncon los parámetros establecidos.");
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -361,7 +369,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.HelpButton = true;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "kCal Control";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
