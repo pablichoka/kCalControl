@@ -5,5 +5,5 @@ App.config
 packages.config
 
 # Ignorar carpeta llamada mi_carpeta
-Properties/
+
 .vs/
