@@ -1,0 +1,9 @@
+# Comentarios inician con el símbolo #
+
+# Ignorar archivo.txt
+App.config
+packages.config
+
+# Ignorar carpeta llamada mi_carpeta
+Properties/
+.vs/
