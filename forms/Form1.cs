@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -196,7 +197,7 @@ namespace kCalControl
             Form2 sqlCon = new Form2();
             sqlCon.ShowDialog();
             userSQL = sqlCon.textBox1.Text;
-            passSQL = sqlCon.textBox2.Text;
+            passSQL = System.Configuration.ConfigurationManager ; //sqlCon.textBox2.Text;
             connectionString = "Data Source=kalcontrol-db.database.windows.net;Initial Catalog=kcalcontrol-db;User ID=" + userSQL +";Password=" + passSQL + ";Connect Timeout=10;Encrypt=True";  
         }
 
